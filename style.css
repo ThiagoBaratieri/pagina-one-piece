@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 /* Configuração de reset de margens e preenchimento */
 * {
     margin: 0;
@@ -5,24 +7,105 @@
     box-sizing: border-box;
 }
 
+/* Cor de Fundo */
 body {
     background: #128EEB;
 }
 
+/* Imagem da tripulação - config de tamanho */
 .body-img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* 962px */
+    height: auto; /* 541.13px */
 }
 
+/* Caixa de cabeçalho - tamanho - cor - posição */
 header {
-    width: 1280px;
-    height: 137px;
+    width: 1088px;
+    height: 93.61px;
     flex-shrink: 0;
     background: rgba(114, 114, 114, 0.10);
     backdrop-filter: blur(7.5px);
+    position: absolute;
+    top: 0px;
+    left: 128px;
+    z-index: 2;
 }
 
+/* Logo - tamanho - posição */
 .header-img {
-    width: 306px;
-    height: 105px;
+    width: 180px;
+    height: auto; /* 61.61px */
+    margin-top: 16px;
+    margin-left: 32px;
+}
+
+/* Card de cadastro - tamanho - posição - cor */
+.card-cadastro {
+    width: 315px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: rgba(30, 30, 30, 0.50);
+    backdrop-filter: blur(7.5px);
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 140px;
+    left: 128px;
+    z-index: 2;
+}
+
+
+/* Editar informações do card */
+.textfield {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.title {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+input {
+    width: 230px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.btn-card {
+    width: 230px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background: #FC0;
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 32px;
+}
+
+::placeholder {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 8px;
 }
