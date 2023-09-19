@@ -1,0 +1,28 @@
+/* Configuração de reset de margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #128EEB;
+}
+
+.body-img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    width: 1280px;
+    height: 137px;
+    flex-shrink: 0;
+    background: rgba(114, 114, 114, 0.10);
+    backdrop-filter: blur(7.5px);
+}
+
+.header-img {
+    width: 306px;
+    height: 105px;
+}
