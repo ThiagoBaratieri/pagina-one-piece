@@ -137,6 +137,7 @@ input {
     margin-bottom: 16px;
 }
 
+/* Texto da bio */
 .body-text {
     color: #FFF;
     font-family: Poppins;
@@ -147,10 +148,82 @@ input {
     padding-left: 32px;
 }
 
+/* Config da imagem */
 .bio-shanks-img {
     width: 460px;
     height: auto;
     position: absolute;
     top: -120px;
     right: 20px;
+}
+
+/* Config bio 3 personagens */
+.personagens-bio {
+    display: flex;
+    margin-top: 128px;
+}
+
+.zoro-bio {
+    width: 349.33px;
+    height: 597px;
+    flex-shrink: 0;
+    background: #1E1E1E;
+    margin-left: 128px;
+    margin-right: 20px;
+
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.luffy-bio {
+    width: 349.33px;
+    height: 597px;
+    flex-shrink: 0;
+    background: #727272;
+    margin-right: 20px;
+
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sanji-bio {
+    width: 349.33px;
+    height: 597px;
+    flex-shrink: 0;
+    background: #1E1E1E;
+
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-bio-3 {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: -80px;
+    z-index: 1;
+}
+
+.titles-bio-3 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 32px;
+
+    margin: 0;
+    margin-bottom: 144px;
+    margin-top: 24px;
 }
