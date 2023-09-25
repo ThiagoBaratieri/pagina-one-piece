@@ -64,7 +64,7 @@ header {
     margin-top: 32px;
 }
 
-.title {
+.titles {
     color: #FFF;
     font-family: Poppins;
     font-size: 30px;
@@ -108,4 +108,49 @@ input {
     font-weight: 400;
     line-height: normal;
     padding-left: 8px;
+}
+
+
+/* Caixa biografia Shanks */
+.box-bio {
+    width: 1088px;
+    height: 286px;
+    flex-shrink: 0;
+    background: #727272;
+    margin-top: 72px;
+    margin-left: 128px;
+    position: relative;
+}
+
+/* Titulo da bio do shanks */
+#title-bio {
+    color: #B4463B;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    padding-left: 32px;
+    padding-top: 24px;
+    margin-bottom: 16px;
+}
+
+.body-text {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 32px;
+}
+
+.bio-shanks-img {
+    width: 460px;
+    height: auto;
+    position: absolute;
+    top: -120px;
+    right: 20px;
 }
