@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>One Piece</title>
 </head>
 
@@ -58,17 +59,27 @@
         </div>
 
         <!-- Esta div se refere ao slider de wallpapers -->
-        <div class="slider-wallpapers">
-            <h1 class="titles">Wallpapers</h1>
-            <img src="anexos/luffygear5.jpeg" alt="Wallpaper One Piece">
-            <img src="anexos/seta dir.svg" alt="Seta Direita">
-            <img src="anexos/seta esq.svg" alt="Seta Esquerda">
+        <div class="slider-conteiner">
+            <h1 class="titles" id="title-slider">WALLPAPERS</h1>
+            <div class="slider">
+                <img src="anexos/luffygear5.jpeg" alt="Wallpaper One Piece" class="img-slider-bar">
+                <img src="anexos/wall02.jpg" alt="Wallpaper One Piece" class="img-slider-bar">
+                <img src="anexos/wall03.jpg" alt="Wallpaper One Piece" class="img-slider-bar">
+            </div>
+
+            <button id="btn-esq">
+                <img width="50px" src="anexos/seta esq.svg" alt="Anterior">
+            </button>
+            <button id="btn-dir">
+                <img width="50px" src="anexos/seta dir.svg" alt="Próximo">
+            </button>
+
         </div>
 
         <!-- Esta div se refere ao QUIZ -->
         <div class="interface-quiz">
-            <h1 class="title">VOCÊ SABE TUDO SOBRE ONE PIECE?</h1>
-            <h1 class="title">VAMOS FAZER O TESTE:</h1>
+            <h1 class="titles">VOCÊ SABE TUDO SOBRE ONE PIECE?</h1>
+            <h1 class="titles">VAMOS FAZER O TESTE:</h1>
             <img src="anexos/zoroFoda.png" alt="Personagem Zoro" class="img-quiz">
             <button class="btn-quiz">COMEÇAR QUIZ</button>
         </div>

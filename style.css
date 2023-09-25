@@ -163,6 +163,7 @@ input {
     margin-top: 128px;
 }
 
+/* Criando as 3 box */
 .zoro-bio {
     width: 349.33px;
     height: 597px;
@@ -226,4 +227,47 @@ input {
     margin: 0;
     margin-bottom: 144px;
     margin-top: 24px;
+}
+
+/* Config Slider-bar */
+.slider-conteiner {
+    position: relative;
+    overflow: hidden;
+    margin-top: 32px;
+}
+
+#title-slider {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s easy-in-out;
+}
+
+.img-slider-bar {
+    width: 1088px;
+    margin-left: 128px;
+}
+
+#btn-esq,
+#btn-dir {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#btn-esq {
+    left: 128px;
+}
+  
+#btn-dir {
+    right: 128px;
 }
