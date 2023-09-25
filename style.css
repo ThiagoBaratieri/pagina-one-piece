@@ -245,7 +245,7 @@ input {
 
 .slider {
     display: flex;
-    transition: transform 0.5s easy-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .img-slider-bar {
