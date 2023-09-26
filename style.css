@@ -380,11 +380,6 @@ input {
     top: 32px;
 }
 
-#refazer-botao {
-    position: absolute;
-    bottom: 32px;
-}
-
 #marcador-pergunta {
     font-family: Poppins;
     font-size: 40px;
@@ -442,6 +437,49 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Config tela resultado */
+.quiz-result-box {
+    display: flex;
+}
+
+.titles-result {
+    margin-top: 48px;
+}
+
+#title-result-quiz01 {
+    margin-bottom: -20px;
+}
+
+
+#pontuacao {
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    position: absolute;
+    text-align: center;
+    bottom: 120px;
+
+    width: 230px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background: #14FF00;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#refazer-botao {
+    position: absolute;
+    bottom: -10px;
 }
 
 

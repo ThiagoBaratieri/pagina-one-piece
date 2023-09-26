@@ -86,6 +86,14 @@ document.addEventListener('DOMContentLoaded', function () {
   const refazerButton = document.getElementById('refazer-botao');
   const respostasCorretas = document.getElementById('respostas-corretas');
 
+  function embaralharArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+
   /* Lista com as perguntas */
   const perguntas = [
     {
@@ -102,12 +110,49 @@ document.addEventListener('DOMContentLoaded', function () {
         pergunta: 'Qual é o nome do navio dos Piratas do Chapéu de Palha?',
         opcoes: ['Going Merry', 'Thousand Sunny', 'Red Force', 'Going Sunny'],
         resposta: 'Thousand Sunny'
+    },
+    {
+      pergunta: 'Quem é o(a) arqueólogo(a) da tripulação dos Chapéu de Palha?',
+      opcoes: ['Zoro', 'Usopp', 'Robin', 'Sanji'],
+      resposta: 'Robin'
+    },
+    {
+        pergunta: 'Qual é o nome do pirata que Nami servia?',
+        opcoes: ['Shanks', 'Arlong', 'Buggy', 'Ace'],
+        resposta: 'Arlong'
+    },
+    {
+        pergunta: 'Qual membro da tripulação era conhecido como "Caçador de Piratas"?',
+        opcoes: ['Franky', 'Zoro', 'Nami', 'Chopper'],
+        resposta: 'Zoro'
+    },
+    {
+        pergunta: 'Quem é o cozinheiro e especialista em artes marciais dos Chapéu de Palha?',
+        opcoes: ['Luffy', 'Sanji', 'Nami', 'Usopp'],
+        resposta: 'Sanji'
+    },
+    {
+        pergunta: 'Qual é o nome do primeiro navio dos Chapéu de Palha?',
+        opcoes: ['Going Merry', 'Thousand Sunny', 'Moby Dick', 'Red Force'],
+        resposta: 'Going Merry'
+    },
+    {
+        pergunta: 'Qual é o nome da organização governamental que persegue os piratas em One Piece?',
+        opcoes: ['Marinha', 'Revolucionários', 'Shichibukai', 'Yonko'],
+        resposta: 'Marinha'
+    },
+    {
+        pergunta: 'Quem é o líder dos Piratas do Coração?',
+        opcoes: ['Law', 'Bepo', 'Killer', 'Penguin'],
+        resposta: 'Law'
     }
   ];
   
+  embaralharArray(perguntas);
+
   let perguntaAtual = 0;
   let marcadorAtual = 0;
-  let acertos = 0;
+  let pontuacao = 0;
 
   comecarQuizButton.addEventListener('click', function () {
     console.log('Apertou para começar o QUIZ', comecarQuizButton);
@@ -128,7 +173,13 @@ document.addEventListener('DOMContentLoaded', function () {
   function reiniciarQuiz() {
     perguntaAtual = 0;
     marcadorAtual = 0;
+    pontuacao = 0;
     exibirPergunta(); // Exibe a primeira pergunta ao reiniciar o quiz
+  }
+
+  function atualizarPlacar() {
+    const placarElemento = document.getElementById('pontuacao');
+    placarElemento.textContent = `${pontuacao}/10`;
   }
 
   function exibirPergunta() {
@@ -158,7 +209,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // Resposta correta
         perguntaAtual++;
         marcadorAtual++;
-        acertos++;
+        pontuacao++;
+        atualizarPlacar();
 
         if (perguntaAtual < perguntas.length) {
             exibirPergunta();
