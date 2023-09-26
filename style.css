@@ -293,9 +293,11 @@ input {
     align-self: center;
 }
 
+/* Config quiz tela inicial */
 .interface-quiz {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-top: 64px;
 }
@@ -332,6 +334,119 @@ input {
     margin-bottom: 64px;
     align-self: center;
 }
+
+/* Tela do quiz após clicar em começar */
+.quiz {
+    width: 1088px;
+    height: 550px;
+    border-radius: 15px;
+    background: #031088;
+
+    margin-left: 128px;
+    margin-bottom: 64px;
+    margin-top: 64px;
+    padding-top: 32px;
+}
+
+.quiz-mar {
+    width: 1024px;
+    height: 486px;
+    border-radius: 15px;
+    border: 10px solid #FC0;
+    background: rgba(3, 16, 136, 0.00);
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 32px;
+}
+
+.logo-quiz {
+    width: 200px;
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+}
+
+#quiz-result-box {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.logo-quiz-result {
+    width: 200px;
+    position: absolute;
+    top: 32px;
+}
+
+#refazer-botao {
+    position: absolute;
+    bottom: 32px;
+}
+
+#marcador-pergunta {
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+}
+
+#pergunta-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 72px;
+}
+
+#pergunta {
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+    margin-left: 16px;
+    margin-top: 64px;
+    margin-bottom: 16px;
+}
+
+#opcoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    grid-template-rows: repeat(2, auto); /* Duas linhas */
+    gap: 10px; /* Espaçamento entre as opções */
+}
+
+.opcao {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background: #FC0;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+
+    /* Alinhar texto das opcoes no centro da box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
 
 .footer {
     background-image: url('anexos/imgPrincipal-OP.jpg');
