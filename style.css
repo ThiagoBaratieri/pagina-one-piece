@@ -291,4 +291,53 @@ input {
     
     margin-top: 32px;
     align-self: center;
-}   
+}
+
+.interface-quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.quiz-titles {
+    margin-bottom: 32px;
+}
+
+#title-quiz-01 {
+    margin-bottom: -10px;
+}
+
+.img-quiz {
+    width: 400px;
+    align-self: center;
+    margin-bottom: 32px;
+}
+
+.btn-quiz {
+    width: 230px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background: #FC0;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-bottom: 64px;
+    align-self: center;
+}
+
+.footer {
+    background-image: url('anexos/imgPrincipal-OP.jpg');
+    background-size: cover; /* Faz a imagem cobrir todo o elemento */
+    background-position: 50% 30%; /* Alinha a imagem no centro horizontal e no rodapé vertical */
+    height: 200px; /* Defina a altura desejada para o rodapé */
+    text-align: center; /* Alinhe o conteúdo no centro se necessário */
+    color: #fff; /* Cor do texto no rodapé */
+}

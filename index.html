@@ -80,15 +80,26 @@
 
         <!-- Esta div se refere ao QUIZ -->
         <div class="interface-quiz">
-            <h1 class="titles">VOCÊ SABE TUDO SOBRE ONE PIECE?</h1>
-            <h1 class="titles">VAMOS FAZER O TESTE:</h1>
+            <div class="quiz-titles">
+                <h1 class="titles" id="title-quiz-01">VOCÊ SABE TUDO SOBRE ONE PIECE?</h1>
+                <h1 class="titles" id="title-quiz-02">VAMOS FAZER O TESTE:</h1>
+            </div>
             <img src="anexos/zoroFoda.png" alt="Personagem Zoro" class="img-quiz">
             <button class="btn-quiz">COMEÇAR QUIZ</button>
         </div>
+
+        <div id="tela-quiz" style="display: none;">
+            <div id="marcador-pergunta"></div>
+            <div id="pergunta-conteiner">
+                <h1 id="pergunta"></h1>
+                <div id="opcoes"></div>
+            </div>
+            
+        </div>
+
     </main>
 
-    <footer>
-
+    <footer class="footer">
 
     </footer>
 
