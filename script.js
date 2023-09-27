@@ -80,11 +80,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const resultadoQuiz = document.getElementById('resultado-quiz');
   const comecarQuizButton = document.getElementById('comecar-quiz');
   const marcadorPergunta = document.getElementById('marcador-pergunta');
-  const perguntaConteiner = document.getElementById('pergunta-conteiner');
+  //const perguntaConteiner = document.getElementById('pergunta-conteiner');
   const perguntaElemento = document.getElementById('pergunta');
   const opcoesElemento = document.getElementById('opcoes');
   const refazerButton = document.getElementById('refazer-botao');
-  const respostasCorretas = document.getElementById('respostas-corretas');
 
   function embaralharArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -180,6 +179,23 @@ document.addEventListener('DOMContentLoaded', function () {
   function atualizarPlacar() {
     const placarElemento = document.getElementById('pontuacao');
     placarElemento.textContent = `${pontuacao}/10`;
+    mensagemResultado()
+  }
+
+  const mensagens = ['PARABÉNS', 'MUITO BEM', 'TENTE DE NOVO'];
+
+  function mensagemResultado () {
+    const mensagem = document.getElementById('mensage');
+    if (pontuacao > 6) {
+      mensagem.textContent = mensagens[0];
+      mensagem.style.color = 'green';
+    } else if (pontuacao > 4) {
+        mensagem.textContent = mensagens[1];
+        mensagem.style.color = 'yellow';
+      } else {
+        mensagem.textContent = mensagens[2];
+        mensagem.style.color = 'red';
+      }
   }
 
   function exibirPergunta() {
